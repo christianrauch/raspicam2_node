@@ -35,7 +35,7 @@ target_link_libraries(raspicam raspicam_common)
 
 # composable ros node
 add_library(RasPiCamPublisherNode SHARED src/RasPiCamPublisherNode.cpp)
-ament_target_dependencies(RasPiCamPublisherNode rclcpp sensor_msgs class_loader)
+ament_target_dependencies(RasPiCamPublisherNode rclcpp rclcpp_components sensor_msgs class_loader)
 target_link_libraries(RasPiCamPublisherNode raspicam)
 rclcpp_components_register_nodes(RasPiCamPublisherNode "RasPiCamPublisher")
 
