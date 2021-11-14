@@ -11,7 +11,6 @@ camera:
 
             sharpness: 0              # Set image sharpness (-100 - 100)
             contrast: 0               # Set image contrast (-100 - 100)
-            brightness: 0             # Set image brightness (0 - 100)
             saturation: 0             # Set image saturation (-100 - 100)
             ISO: 0                    # Set capture ISO (100 - 800), 0: auto
             videoStabilisation: 0     # Turn on video stabilisation

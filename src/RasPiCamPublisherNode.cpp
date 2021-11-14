@@ -16,7 +16,6 @@ RasPiCamPublisher::RasPiCamPublisher(rclcpp::NodeOptions options)
     declare_parameter("camera_id");
     declare_parameter("sharpness");
     declare_parameter("contrast");
-    declare_parameter("brightness");
     declare_parameter("saturation");
     declare_parameter("ISO");
     declare_parameter("videoStabilisation");
@@ -95,7 +94,6 @@ RasPiCamPublisher::RasPiCamPublisher(rclcpp::NodeOptions options)
 
     get_parameter_or("sharpness", state->camera_parameters.sharpness, 0);
     get_parameter_or("contrast", state->camera_parameters.contrast, 0);
-    get_parameter_or("brightness", state->camera_parameters.brightness, 0);
     get_parameter_or("saturation", state->camera_parameters.saturation, 0);
     get_parameter_or("ISO", state->camera_parameters.ISO, 0);
     get_parameter_or("videoStabilisation", state->camera_parameters.videoStabilisation, 0);
