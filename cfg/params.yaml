@@ -36,7 +36,7 @@ camera:
             vflip: 0                # Set vertical flip
             roi_x: 0.0              # Set sensor region of interest, x
             roi_y: 0.0              # Set sensor region of interest, y
-            roi_w: 0.0              # Set sensor region of interest, w
+            roi_w: 1.0              # Set sensor region of interest, w
             roi_h: 1.0              # Set sensor region of interest, h
             shutter_speed: 0        # Set shutter speed in microseconds, max: 6000000us, 0: auto
 

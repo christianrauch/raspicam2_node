@@ -111,7 +111,7 @@ RasPiCamPublisher::RasPiCamPublisher(rclcpp::NodeOptions options)
     get_parameter_or("vflip", state->camera_parameters.vflip, 0);
     get_parameter_or("roi_x", state->camera_parameters.roi.x, 0.0);
     get_parameter_or("roi_y", state->camera_parameters.roi.y, 0.0);
-    get_parameter_or("roi_w", state->camera_parameters.roi.w, 0.0);
+    get_parameter_or("roi_w", state->camera_parameters.roi.w, 1.0);
     get_parameter_or("roi_h", state->camera_parameters.roi.h, 1.0);
     get_parameter_or("shutter_speed", state->camera_parameters.shutter_speed, 0);
 
