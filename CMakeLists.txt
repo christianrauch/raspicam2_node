@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(raspicam2)
 
+message(WARNING "The 'raspicam2' package is deprecated. Use 'camera_ros' (https://github.com/christianrauch/camera_ros) instead.")
+
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
   set(CMAKE_C_STANDARD 99)
